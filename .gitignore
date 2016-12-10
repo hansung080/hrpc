@@ -138,7 +138,6 @@ ipch/
 *.ncb
 *.opendb
 *.opensdf
-*.sdf
 *.cachefile
 *.VC.db
 *.VC.VC.opendb
@@ -333,9 +332,10 @@ __pycache__/
 build/
 
 # Other files
-*.sln
-*.vcxproj
-*.vcxproj.filters
+#*.sln
+#*.sdf
+#*.vcxproj
+#*.vcxproj.filters
 *.ipch
 *.idb
 
