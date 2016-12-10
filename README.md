@@ -8,6 +8,14 @@
 
   2. 솔루션 추가후, ServerSolution 프로젝트 제거
 
+@ 프로젝트 추가 순서
+  1. ServerSolution
+  2. LowLib
+  3. TestServer
+  4. PacketGenerator
+  5. PerformanceProvider
+  6. Server
+  7. Client
 
 << [참조] 라이브러리 추가 방법 >>
 
