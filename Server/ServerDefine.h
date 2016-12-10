@@ -1,0 +1,6 @@
+#ifndef __SERVER_SERVERDEFINE_H__
+#define _SERVER_SERVERDEFINE_H__
+
+#define MAX_USER 100
+
+#endif //_SERVER_SERVERDEFINE_H__

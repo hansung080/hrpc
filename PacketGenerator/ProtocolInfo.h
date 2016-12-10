@@ -1,0 +1,20 @@
+#ifndef __PACKETGENERATOR_PROTOCOLINFO_H__
+#define __PACKETGENERATOR_PROTOCOLINFO_H__
+
+#pragma pack(push, 1)
+
+typedef struct _PARAMETER {
+	TCHAR type[MAX_LINE_LENGTH];
+	TCHAR name[MAX_LINE_LENGTH];
+	DWORD length;
+} PARAMETER;
+
+typedef struct _PROTOCOL {
+	TCHAR name[MAX_LINE_LENGTH];
+	DWORD paramCount;
+	PARAMETER params[MAX_PARAMETER_COUNT];
+} PROTOCOL;
+
+#pragma pack(pop)
+
+#endif // __PACKETGENERATOR_PROTOCOLINFO_H__
