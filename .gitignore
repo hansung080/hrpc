@@ -333,7 +333,7 @@ build/
 
 # Other files
 #*.sln
-#*.sdf
+*.sdf
 #*.vcxproj
 #*.vcxproj.filters
 *.ipch
