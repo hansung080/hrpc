@@ -10,6 +10,55 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ClientSession.cpp" />
+    <ClCompile Include="Crypt.cpp" />
+    <ClCompile Include="EventSelect.cpp" />
+    <ClCompile Include="IniFile.cpp" />
+    <ClCompile Include="IOCP.cpp" />
+    <ClCompile Include="MiniDump.cpp" />
+    <ClCompile Include="NetworkSession.cpp" />
+    <ClCompile Include="PacketSession.cpp" />
+    <ClCompile Include="Random.cpp" />
+    <ClCompile Include="Registry.cpp" />
+    <ClCompile Include="Service.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Stream.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoDetectMemoryLeak.h" />
+    <ClInclude Include="CircularQueue.h" />
+    <ClInclude Include="ClientInfo.h" />
+    <ClInclude Include="ClientSession.h" />
+    <ClInclude Include="Constant.h" />
+    <ClInclude Include="CriticalSection.h" />
+    <ClInclude Include="Crypt.h" />
+    <ClInclude Include="EventSelect.h" />
+    <ClInclude Include="Global.h" />
+    <ClInclude Include="IniFile.h" />
+    <ClInclude Include="IOCP.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="LowLib.h" />
+    <ClInclude Include="MemoryPool.h" />
+    <ClInclude Include="MiniDump.h" />
+    <ClInclude Include="MultiThreadSync.h" />
+    <ClInclude Include="NetworkInfo.h" />
+    <ClInclude Include="NetworkSession.h" />
+    <ClInclude Include="PacketInfo.h" />
+    <ClInclude Include="PacketSession.h" />
+    <ClInclude Include="Random.h" />
+    <ClInclude Include="Registry.h" />
+    <ClInclude Include="Service.h" />
+    <ClInclude Include="SmartPointer.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Stream.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{91878F8F-BD6C-4D9B-8344-E8811FE3669F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -45,7 +94,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_CRT_NON_CONFORMING_SWPRINTFS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
@@ -70,19 +119,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <Text Include="ReadMe.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
