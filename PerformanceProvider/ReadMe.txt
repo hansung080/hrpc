@@ -35,10 +35,10 @@
 
 @ 라이브러리 추가
   1. 프로젝트 속성 -> 구성 속성 -> C/C++ -> 일반
-     추가 포함 디렉토리 : C:\work\ws\visstu\ServerSolution\LowLib
+     추가 포함 디렉토리 : $(SolutionDir)LowLib
 
   2. 프로젝트 속성 -> 구성 속성 -> 링커 -> 일반
-     추가 라이브러리 디렉토리 : C:\work\ws\visstu\ServerSolution\Debug
+     추가 라이브러리 디렉토리 : $(SolutionDir)Debug
 
   3. 프로젝트 속성 -> 구성 속성 -> 링커 -> 입력 (또는, #pragma comment(lib, "*.lib") 를 소스에 직접 입력)
      추가 종속성 : LowLib.lib;

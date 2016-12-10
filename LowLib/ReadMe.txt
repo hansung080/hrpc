@@ -34,13 +34,13 @@
      _CRT_SECURE_NO_WARNINGS
      _CRT_NON_CONFORMING_SWPRINTFS
 
-@ 라이브러리 추가
+@ 라이브러리 추가 (선택사항)
   1. 솔루션에 새 폴더 추가후, 헤더 및 라이브러리를 추가함.
      <원래 위치>
      C:\Program Files (x86)\Windows Kits\8.1\Include\um\DbgHelp.h
      C:\Windows\System32\dbghelp.dll
      <솔루션내 위치>
-     C:\work\ws\visstu\ServerSolution\libs\dbghelp\include\DbgHelp.h
-     C:\work\ws\visstu\ServerSolution\libs\dbghelp\lib\dbghelp.dll
+     $(SolutionDir)libs\dbghelp\include\DbgHelp.h
+     $(SolutionDir)libs\dbghelp\lib\dbghelp.dll
 
   2. 프로젝트 속성은 일단 변경 안 함.
