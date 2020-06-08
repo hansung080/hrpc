@@ -1,3 +1,3 @@
 # hRPC
-RPC framework using Windows IOCP
+fast and stable RPC framework using Windows IOCP
 
